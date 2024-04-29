@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling lists through css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+   nav>ul>li{
+    /* set the type in which it will be considered */
+        list-style: none;
+
+        border: 2px solid blue;
+        background-color: red;
+
+        /* it will set the numbering inside */
+        list-style-position: inside;
+
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+        box-shadow: 5px 5px 2px 1px;
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>next</li>
+            <li>contact us</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

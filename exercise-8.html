@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        :root {
+            --h: 100vh;
+            --w: 80vw;
+            --bg: blue;
+        }
+
+        .container {
+            background-color:var(--bg);
+            height: var(--h);
+            width: var(--w);
+        }
+
+        .box {
+            background-color: purple;
+            height: 14vh;
+            width: 12vh;
+            border-radius: 44px;
+            position: relative;
+            top: 86%;
+            left: 0.5%;
+            animation: anim1;
+            animation-duration: 10s;
+            animation-timing-function: cubic-bezier(0, 0.63, 0.71, 1.03);
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes anim1 {
+            0%{
+                
+            }
+            20%{
+                transform: translateX(100%) translateY(-400%);
+                background-color: violet;
+                --bg:red;
+            }
+            40%{
+                transform: translateX(200%) translateY(0%);
+                background-color: blueviolet;
+                --bg:green;
+            }
+            
+            60%{
+                transform: translateX(300%) translateY(-400%);
+                background-color: blue;
+                --bg:maroon;
+            }
+            80%{
+                transform: translateX(400%) translateY(0%);
+                background-color: crimson;
+                --bg:salmon;
+                        }
+            100%{
+                transform: translateX(500%) translateY(-200%);
+                background-color: darksalmon;
+                --bg:darkgray;
+            }
+        }
+
+        @keyframes anim2 {
+
+            /* 100% {
+                transform: translateY(10%) translateX(50%);
+                background-color: violet;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>

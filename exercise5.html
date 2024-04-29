@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing a Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+header{
+    position: sticky;
+    top: 0px;
+}
+        header>nav {
+            background-color: rgb(183, 93, 213);         
+            height: 10vh;
+            position: sticky;
+        }
+
+        main {
+            background-color: black;
+            height: 90vh;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: white;
+            height: 10vh;
+        }
+
+        main>.boxes {
+            background-color: green;
+            height: 50%;
+            margin: 5px;
+        }
+
+        main>.boxes>.box1 {
+            background-color: blueviolet;
+            height: 90%;
+    width: 45%;
+    display: inline-block;
+    margin-top: 2.25vh;
+    margin-left:2.8vw;
+        }
+
+        main>.boxes>.box2 {
+            background-color: rgb(21, 141, 141);
+            height: 90%;
+    width: 45%;
+    display: inline-block;
+    margin-top: 2.25vh;
+       margin-left: 2.95vw;     
+        }
+        .pointbox{
+width: 5vmin;
+height: 4vmax;
+}
+        .pointbox{
+            
+            background-color: orangered;
+            border-radius: 30px;
+            padding: 5px;
+            position: fixed;
+            bottom: 17vh;
+            right: 5vw;
+        }
+
+        main>.box {
+           text-transform: capitalize;
+           color: white;
+           text-align: center;
+           border: 2px solid white;
+           padding: 2.5vh 0px 0px 0px; 
+           height: 9vh;
+           box-sizing: border-box;
+           border-radius: 35px;
+           width: 80%;
+           margin: auto;
+           margin-top: 90px; 
+           font-family:'Times New Roman', Times, serif;
+           font-weight: 2px;
+           font-size: 2.7vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <div class="boxes">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="box">
+            welcome to sigma web development course
+        </div>
+        <div class="pointbox"></div>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+
+</html>

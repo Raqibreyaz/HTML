@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+nav{
+    background-color: white;
+height: 10vh;
+position: sticky;
+}
+
+nav>.list{
+    display: flex;
+    flex-direction: row;     
+   justify-content: end;
+   color: black;
+   height: 100%;
+}
+.boxes{
+    margin-right: 5vw;
+    font-weight: 0.5px;
+    font-size: larger;
+    margin-top: 3vh;
+    text-transform: capitalize;
+}
+.boxes>a{
+color: black;
+text-decoration: none;
+}
+.mainimg{
+right: 10vw;
+margin-top: 3px;
+position: relative;
+}
+.mainimg>img{
+height: 9vh;
+width: 15vw;
+}
+.iconimg{
+margin-top: 14px;
+margin-right: 8vw;
+}
+.iconimg>img{
+height: 6vh;
+width: 6vh;
+}
+
+
+.container {
+
+height: 140vh;
+width: 90vw;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 30px 20px;
+}
+
+.container>.item {
+    background-color: rgba(128, 128, 128, 0.067);
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: minmax(10px,1fr);
+    text-transform: capitalize;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bold;
+}
+
+.box1 {
+    background-color: rgb(0, 115, 255);
+    height: 37px;
+    border-radius: 5px;
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    background-color: rgb(51, 127, 34);
+    height: 37px;
+    width: 58%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ 
+@media screen and (max-width:664px){
+.container{
+grid-template-columns: 1fr;
+}
+.mainimg{
+right: 5vw;
+}
+.box1{
+margin: 10px 0px;
+}
+.box2{
+margin: 10px 0px;
+}
+} 
+@media screen and (max-width:614px){
+.boxes{
+margin-right: 3vw;
+}
+.boxes a{
+    font-size: small;
+}
+}
+@media screen and (max-width:800px){
+.item a{
+font-size: 12px;
+}
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font texts and colors in css
+    </title>
+    <style>
+        
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+
+h2{
+    font-family: Poppins;
+
+    /* will take the text at the centre */
+
+    text-align: center;
+}
+
+p{
+    /*  font type which is imported */
+    font-family: 'Baloo Bhai 2', sans-serif;
+
+    font-style: italic;
+
+    width: px;
+
+border: 3px;
+
+/* through it  we can make thin or bold font*/
+font-weight: 200;
+
+font-size: 20px;
+
+/* will underline the text */
+text-decoration: underline;
+
+/* will capitalize every first letter of words */
+text-transform: capitalize;
+
+/* will give style to the underline */
+text-decoration-style:underline;
+
+/* will give color to the underline */
+text-decoration-color: blueviolet ;
+
+/* thickness of the underline */
+text-decoration-thickness: 3px;
+
+/* will make the the text distant */
+
+/* text-indent: 50px; */
+
+
+
+}
+#lorem{
+    border: 3px solid blue;
+    width: 89 px;
+
+    /* when texts go overflow the border then it will make it dotted */
+    text-overflow: ellipsis;
+
+     /* when texts go overflow the border then it will cut them */
+     /* text-overflow: clip; */
+
+    /*will break the words when they go out of the border  */
+    /* word-break: break-all; */
+    background-color: cyan;
+    line-height: 3;
+}
+    </style>
+</head>
+<body>
+    <h2>
+        Fonts
+    </h2>
+    <p>
+       this is a text
+    </p>
+    <div id = "lorem">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi mollitia sequi in, alias expedita qui harum excepturi dolor doloribus, ipsam culpa minima velit deserunt. Velit cum, delectus veniam consequatur repellat quo molestias!
+    </div>
+</body>
+</html>
